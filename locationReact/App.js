@@ -38,10 +38,10 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text style={{ marginTop: 50 }}> Latitude: {latitude} </Text>
-      <Text style={{ marginTop: 50 }}> Longitude: {longitude} </Text>
-      <Text style={{ marginTop: 50 }}> Altitude: {altitude} </Text>
-      <Text style={{ marginTop: 50 }}> Velocidade: {speed} </Text>
+      <Text style={styles.box}> Latitude: {latitude} </Text>
+      <Text style={styles.box}> Longitude: {longitude} </Text>
+      <Text style={styles.box}> Altitude: {altitude} </Text>
+      <Text style={styles.box}> Velocidade: {speed} </Text>
     </View>
   );
 }
@@ -53,4 +53,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  box: {
+    marginTop: 50
+  }
 });
